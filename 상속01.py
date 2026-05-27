@@ -9,8 +9,7 @@ class Person:
 # 자식 클래스
 class Student(Person):
     def __init__(self, name, phoneNumber, subject, studentID):
-        self.name = name
-        self.phoneNumber = phoneNumber
+        super().__init__(name, phoneNumber)
         self.subject = subject
         self.studentID = studentID
     def printInfo(self):
